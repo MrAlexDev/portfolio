@@ -115,9 +115,9 @@
     z-index: var(--z-index-hero);
 }
 
-.hero--with-bg {
+/* .hero--with-bg {
     background-image: url('../img/bg/hero-bg.jpg');
-}
+} */
 
 .hero:after {
     content: '';
