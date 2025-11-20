@@ -1,0 +1,70 @@
+/* ============================================
+   COMMON PATTERNS & UTILITIES
+   ============================================ */
+
+/* Section Top Border Pattern */
+.section-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-border);
+}
+
+/* Section Background Pattern */
+.section-bg {
+    padding: var(--spacing-xxl) 0;
+    background: var(--gradient-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Card Hover Effect */
+.card-hover {
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Link Hover Effect */
+.link-hover {
+    transition: all var(--transition-normal);
+}
+
+.link-hover:hover {
+    color: var(--color-accent);
+    fill: var(--color-accent);
+}
+
+/* Button Hover Effect */
+.button-hover {
+    transition: all var(--transition-fast);
+}
+
+.button-hover:hover {
+    background-color: var(--color-primary-blue-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-link);
+}
+
+/* Tech Item Styling */
+.tech-item {
+    background-color: var(--color-primary-blue);
+    color: var(--color-text);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-item span {
+    color: var(--color-text);
+}
+

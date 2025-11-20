@@ -1,0 +1,392 @@
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+/* Tablet Large */
+@media (max-width: 991px) {
+    .main-nav__span {
+        display: none;
+    }
+
+    .main-nav__item+.main-nav__item {
+        margin-left: 50px;
+    }
+
+    .main-nav__list {
+        justify-content: center;
+    }
+
+    .main-nav__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    .main-nav__link::before {
+        content: '';
+        position: absolute;
+        padding: 20px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: border-color 0.4s;
+    }
+
+    .main-nav__link:hover::before {
+        border-color: #FCBB08;
+    }
+
+    .main-nav__link:hover::after {
+        width: 0;
+    }
+
+    .hero__position {
+        padding: 20px 0;
+    }
+
+    .intro__item {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .intro__picture {
+        margin: 0 auto 30px;
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .skills__list {
+        justify-content: center;
+    }
+
+    .skills__item {
+        padding: 0 10px 0 10px;
+    }
+
+    .skills__icon--gulp {
+        margin-left: 6px;
+    }
+
+    .portfolio__item {
+        flex: 0 1 calc(50% - 15px);
+        min-width: 300px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .intro,
+    .skills,
+    .experience,
+    .portfolio,
+    .certificates,
+    .education,
+    .footer {
+        padding: 40px 0;
+    }
+
+    .hero__position {
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    .hero__title {
+        max-width: 100%;
+        font-size: 60px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .experience__article .experience__subtitle,
+    .education__article .education__subtitle {
+        font-size: 18px;
+    }
+
+    .experience__text-item p,
+    .education__text-item p {
+        font-size: 14px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+
+    .intro {
+        padding: 40px 0 0;
+    }
+
+    .intro__title,
+    .portfolio__title {
+        margin-bottom: 50px;
+    }
+
+    .skills__subtitle {
+        margin-bottom: 40px;
+    }
+
+    .portfolio__item {
+        flex: 0 1 calc(50% - 15px);
+        min-width: 280px;
+    }
+
+    .portfolio__img {
+        height: 200px;
+    }
+
+    .portfolio__filter {
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .portfolio__btn+.portfolio__btn {
+        margin-left: 8px;
+    }
+
+    .portfolio__btn {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .certificates__item {
+        flex: 0 1 calc(50% - 15px);
+        min-width: 250px;
+    }
+
+    .certificates__img {
+        max-width: 350px;
+    }
+
+    .zoomContainer {
+        width: 50px !important;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 660px) {
+    .portfolio {
+        padding: 30px 15px;
+    }
+
+    .portfolio__list {
+        gap: 20px;
+    }
+
+    .portfolio__item {
+        flex: 0 1 100%;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .portfolio__article {
+        width: 100%;
+    }
+
+    .portfolio__figure {
+        width: 100%;
+    }
+
+    .portfolio__img {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .portfolio__content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Mobile Medium */
+@media (max-width: 570px) {
+    .certificates__item {
+        flex: 0 1 100%;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+    article {
+        padding: 16px;
+    }
+
+    .intro,
+    .skills,
+    .experience,
+    .portfolio,
+    .certificates,
+    .education,
+    .footer {
+        padding: 20px 0;
+    }
+
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__position {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .intro__text {
+        font-size: 14px;
+    }
+
+    .skills__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .skills__item {
+        margin-bottom: 10px;
+    }
+
+    .skills__item span {
+        font-size: 13px;
+    }
+
+    .intro {
+        padding: 20px 0 0;
+    }
+
+    .portfolio__item {
+        flex: 0 1 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio__img {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .certificates__item {
+        flex: 0 1 100%;
+        min-width: 100%;
+    }
+
+    .experience__article,
+    .education__article {
+        padding: 16px;
+    }
+
+    .certificates__card {
+        padding: 16px;
+        padding-left: 16px;
+    }
+
+    .certificates__card-title {
+        font-size: 18px;
+    }
+
+    .certificates__card-issuer {
+        font-size: 14px;
+    }
+
+    .certificates__img {
+        max-width: 250px;
+    }
+}
+
+/* Height-based Media Queries */
+@media (max-height: 768px) {
+    .hero__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+    }
+
+    .hero__title {
+        max-width: 300px;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .hero__position {
+        max-width: 300px;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+@media (max-height: 736px) {
+    .hero__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: -10em;
+        text-align: center;
+    }
+
+    .hero__title {
+        text-align: center;
+    }
+
+    .hero__position {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-height: 568px) {
+    .hero__content {
+        top: -7em;
+    }
+}
+
+@media (max-height: 414px) {
+    .hero__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+    }
+
+    .hero__title {
+        max-width: 300px;
+        font-size: 35px;
+        text-align: right;
+    }
+
+    .hero__position {
+        max-width: 188px;
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+    }
+
+    .intro__image {
+        max-height: 370px;
+        margin: 0 15px 0 0;
+    }
+
+    .intro__text {
+        margin-bottom: 20px;
+    }
+}
+

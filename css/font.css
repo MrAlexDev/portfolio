@@ -1,0 +1,34 @@
+/* ============================================
+   FONTS & TYPOGRAPHY
+   ============================================ */
+
+body {
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: var(--font-size-lg);
+    line-height: 1.3;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.title {
+    margin: 0 0 50px;
+    text-align: center;
+    font-size: var(--font-size-title-xxl);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-accent);
+}
+
+.subtitle {
+    display: inline-block;
+    font-size: var(--font-size-title-sm);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-medium);
+}
+

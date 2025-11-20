@@ -1,0 +1,91 @@
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+
+:root {
+    /* Colors */
+    --color-primary: #141530;
+    --color-primary-dark: #1a1f40;
+    --color-accent: #f9dd79;
+    --color-accent-hover: #FCBB08;
+    --color-text: #fff;
+    --color-text-secondary: #f2f2f2;
+    --color-text-dark: #333;
+    --color-text-gray: #555;
+    --color-text-light-gray: #666;
+    --color-text-light: #e0e0e0;
+    --color-bg-white: #ffffff;
+    --color-bg-gray: #e0e0e0;
+    --color-primary-blue: #6A8EEB;
+    --color-primary-blue-hover: #5a7ddb;
+
+    /* Gradients */
+    --gradient-bg: linear-gradient(135deg, #141530 0%, #1a1f40 50%, #141530 100%);
+    --gradient-border: linear-gradient(90deg, transparent, #f9dd79, transparent);
+    --gradient-card-border: linear-gradient(180deg, #6A8EEB 0%, #f9dd79 100%);
+    --gradient-hero-overlay: linear-gradient(rgb(0 0 0 / 71%), rgb(0 0 0 / 10%));
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 60px;
+
+    /* Font Sizes */
+    --font-size-xs: 11px;
+    --font-size-sm: 12px;
+    --font-size-base: 13px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 20px;
+    --font-size-title-sm: 22px;
+    --font-size-title-md: 24px;
+    --font-size-title-lg: 30px;
+    --font-size-title-xl: 40px;
+    --font-size-title-xxl: 67px;
+    --font-size-hero: 80px;
+    --font-size-hero-position: 32px;
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 20px;
+    --radius-circle: 50%;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 8px 20px rgba(0, 0, 0, 0.2);
+    --shadow-xxl: 0 8px 24px rgba(0, 0, 0, 0.3);
+    --shadow-portfolio: 0 10px 40px rgba(0, 0, 0, 0.4);
+    --shadow-portfolio-hover: 0 15px 50px rgba(249, 221, 121, 0.3);
+    --shadow-link: 0 4px 12px rgba(106, 142, 235, 0.4);
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-normal: 0.4s ease;
+    --transition-slow: 0.5s ease;
+    --transition-slowest: 0.6s ease;
+
+    /* Layout */
+    --container-max-width: 1400px;
+    --container-padding: 16px;
+
+    /* Z-index */
+    --z-index-hero: 105;
+    --z-index-header: 110;
+    --z-index-overlay: 10;
+}
+
